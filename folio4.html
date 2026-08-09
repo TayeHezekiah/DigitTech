@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GraceLife Church | Everyone Is Welcome</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:Poppins,sans-serif;
+background:#fafafa;
+color:#333;
+
+}
+
+h1,h2,h3{
+
+font-family:"Cormorant Garamond",serif;
+
+}
+
+img{
+
+display:block;
+max-width:100%;
+
+}
+
+a{
+
+text-decoration:none;
+
+}
+
+/* Navigation */
+
+header{
+
+position:absolute;
+width:100%;
+top:0;
+left:0;
+padding:25px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+
+}
+
+.logo{
+
+display:inline-flex;
+align-items:center;
+gap:12px;
+font-size:34px;
+font-weight:bold;
+color:white;
+
+}
+
+.logo-img{
+
+height:32px;
+width:auto;
+display:block;
+
+nav{
+
+display:flex;
+align-items:center;
+gap:30px;
+
+}
+
+nav a{
+
+color:white;
+font-weight:500;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#FFD369;
+
+}
+
+.visit-btn{
+
+padding:14px 28px;
+background:#FFD369;
+color:#111;
+border-radius:40px;
+font-weight:bold;
+
+}
+
+/* Hero */
+
+.back-btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;margin:24px 8% 0;border-radius:999px;background:rgba(255,255,255,.96);color:#1D3557;border:1px solid rgba(29,53,87,.18);box-shadow:0 16px 35px rgba(0,0,0,.08);font-weight:700;transition:transform .25s ease,box-shadow .25s ease,background .25s ease;width:fit-content;}
+.back-btn:hover{transform:translateY(-2px);box-shadow:0 20px 42px rgba(0,0,0,.14);background:#f8fbff;}
+.back-btn:active{transform:translateY(0);background:#eef5ff;}
+.back-btn:focus-visible{outline:3px solid rgba(29,53,87,.18);outline-offset:3px;}
+
+.hero{
+
+height:100vh;
+
+background:
+
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+
+url("https://images.unsplash.com/photo-1519491050282-cf00c82424b4?w=1600")
+
+center/cover;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+
+}
+
+.hero-content{
+
+max-width:850px;
+color:white;
+
+}
+
+.hero h1{
+
+font-size:72px;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+margin-bottom:35px;
+line-height:1.8;
+
+}
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:16px 35px;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+
+}
+
+.primary{
+
+background:#FFD369;
+color:#111;
+
+}
+
+.secondary{
+
+border:2px solid white;
+color:white;
+
+}
+
+.primary:hover{
+
+transform:translateY(-3px);
+
+}
+
+.secondary:hover{
+
+background:white;
+color:#111;
+
+}
+
+/* Welcome */
+
+section{
+
+padding:90px 8%;
+
+}
+
+.section-title{
+
+font-size:50px;
+text-align:center;
+margin-bottom:15px;
+color:#1D3557;
+
+}
+
+.section-sub{
+
+text-align:center;
+max-width:750px;
+margin:auto;
+margin-bottom:60px;
+color:#666;
+
+}
+
+.welcome{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+gap:60px;
+align-items:center;
+
+}
+
+.welcome img{
+
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.welcome h2{
+
+font-size:48px;
+margin-bottom:20px;
+color:#1D3557;
+
+}
+
+.welcome p{
+
+margin-bottom:18px;
+color:#555;
+
+}
+
+/* Stats */
+
+.stats{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:60px;
+
+}
+
+.stat{
+
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+text-align:center;
+
+}
+
+.stat h2{
+
+font-size:44px;
+color:#1D3557;
+
+}
+
+.stat p{
+
+margin-top:10px;
+
+}
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:20px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a class="back-btn" href="index.html#portfolio" aria-label="Back to Portfolio"><span aria-hidden="true">←</span><span>Back to Portfolio</span></a>
+
+<header>
+
+<a class="logo" href="index.html"><img src="digittech-logo.png" alt="DigitTech logo" class="logo-img"></a>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#ministries">Ministries</a>
+
+<a href="#events">Events</a>
+
+<a href="#contact">Contact</a>
+
+<a href="#contact" class="visit-btn">
+
+Plan Your Visit
+
+</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+
+Faith. Hope. Love.
+
+</h1>
+
+<p>
+
+A place where everyone is welcome to grow in faith, build meaningful relationships and experience God's love.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contact" class="btn primary">
+
+Join Us This Sunday
+
+</a>
+
+<a href="#about" class="btn secondary">
+
+Learn More
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="welcome">
+
+<div>
+
+<h2>
+
+Welcome Home
+
+</h2>
+
+<p>
+
+Whether you're visiting church for the first time or looking for a place to belong, GraceLife Church is a community where you can worship, grow and serve together.
+
+</p>
+
+<p>
+
+Through inspiring worship, practical Bible teaching and genuine relationships, we help people discover purpose and live a life of faith.
+
+</p>
+
+</div>
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=1000">
+
+</div>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+
+<h2>4,500+</h2>
+
+<p>Church Members</p>
+
+</div>
+
+<div class="stat">
+
+<h2>35+</h2>
+
+<p>Life Groups</p>
+
+</div>
+
+<div class="stat">
+
+<h2>18</h2>
+
+<p>Community Outreach Programs</p>
+
+</div>
+
+<div class="stat">
+
+<h2>25</h2>
+
+<p>Years Serving the Community</p>
+
+</div>
+
+</div>
+
+</section>
+  
+  <section id="ministries">
+
+<style>
+
+.ministry-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+gap:30px;
+}
+
+.ministry-card{
+background:#fff;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:center;
+transition:.35s;
+}
+
+.ministry-card:hover{
+transform:translateY(-10px);
+}
+
+.ministry-card h2{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.ministry-card h3{
+font-size:32px;
+margin-bottom:15px;
+color:#1D3557;
+}
+
+.ministry-card p{
+color:#666;
+}
+
+.pastor{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+gap:60px;
+align-items:center;
+margin-top:100px;
+
+}
+
+.pastor img{
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.pastor h2{
+font-size:50px;
+color:#1D3557;
+margin-bottom:20px;
+}
+
+.pastor p{
+margin-bottom:18px;
+color:#555;
+}
+
+.events{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:60px;
+}
+
+.event{
+background:#1D3557;
+color:#fff;
+padding:30px;
+border-radius:18px;
+transition:.35s;
+}
+
+.event:hover{
+transform:translateY(-8px);
+}
+
+.event-date{
+font-size:18px;
+font-weight:bold;
+color:#FFD369;
+margin-bottom:15px;
+}
+
+.sermons{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+margin-top:60px;
+}
+
+.sermon{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+}
+
+.sermon:hover{
+transform:translateY(-8px);
+}
+
+.sermon img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.sermon-content{
+padding:25px;
+}
+
+.sermon-content h3{
+margin-bottom:15px;
+color:#1D3557;
+}
+
+.watch-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 24px;
+background:#FFD369;
+color:#111;
+border-radius:30px;
+font-weight:bold;
+}
+
+.watch-btn:hover{
+background:#f6c84c;
+}
+
+</style>
+
+<h2 class="section-title">
+Our Ministries
+</h2>
+
+<p class="section-sub">
+There's a place for every member of the family to connect, grow and serve.
+</p>
+
+<div class="ministry-grid">
+
+<div class="ministry-card">
+
+<h2>👨‍👩‍👧</h2>
+
+<h3>Family Ministry</h3>
+
+<p>
+
+Helping families grow stronger through biblical teaching, fellowship and support.
+
+</p>
+
+</div>
+
+<div class="ministry-card">
+
+<h2>🎵</h2>
+
+<h3>Worship Team</h3>
+
+<p>
+
+Leading people into God's presence through passionate worship and music.
+
+</p>
+
+</div>
+
+<div class="ministry-card">
+
+<h2>🧒</h2>
+
+<h3>Kids Church</h3>
+
+<p>
+
+A fun and safe environment where children learn about Jesus every week.
+
+</p>
+
+</div>
+
+<div class="ministry-card">
+
+<h2>❤️</h2>
+
+<h3>Community Outreach</h3>
+
+<p>
+
+Serving our community through compassion, outreach and practical support.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="pastor">
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1000" alt="Senior Pastor">
+
+</div>
+
+<div>
+
+<h2>
+
+Meet Our Senior Pastor
+
+</h2>
+
+<p>
+
+Our vision is to see lives transformed through the love of Jesus Christ. Every service is designed to encourage, inspire and strengthen your faith.
+
+</p>
+
+<p>
+
+Whether you're new to church or have been following Christ for years, you'll find a welcoming community ready to walk alongside you.
+
+</p>
+
+<a href="#contact" class="watch-btn">
+
+Meet Our Team
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="events" style="background:#f8f9fc;">
+
+<h2 class="section-title">
+Upcoming Events
+</h2>
+
+<p class="section-sub">
+Join us for worship, prayer, fellowship and community events throughout the month.
+</p>
+
+<div class="events">
+
+<div class="event">
+
+<div class="event-date">
+📅 Every Sunday • 9:00 AM
+</div>
+
+<h3>Sunday Worship Experience</h3>
+
+<p>
+
+Powerful worship, inspiring teaching and a welcoming atmosphere for the whole family.
+
+</p>
+
+</div>
+
+<div class="event">
+
+<div class="event-date">
+🙏 Wednesdays • 6:30 PM
+</div>
+
+<h3>Midweek Prayer Service</h3>
+
+<p>
+
+A dedicated time of prayer, encouragement and spiritual growth.
+
+</p>
+
+</div>
+
+<div class="event">
+
+<div class="event-date">
+🎉 Last Friday Monthly
+</div>
+
+<h3>Youth Night</h3>
+
+<p>
+
+An exciting evening filled with worship, games, teaching and fellowship for young people.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Latest Sermons
+</h2>
+
+<p class="section-sub">
+Watch recent messages and be encouraged throughout the week.
+</p>
+
+<div class="sermons">
+
+<div class="sermon">
+
+<img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=900" alt="Sermon">
+
+<div class="sermon-content">
+
+<h3>Walking by Faith</h3>
+
+<p>
+
+Discover how trusting God transforms everyday life and brings lasting hope.
+
+</p>
+
+<a href="#" class="watch-btn">
+
+Watch Message
+
+</a>
+
+</div>
+
+</div>
+
+<div class="sermon">
+
+<img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=900" alt="Sermon">
+
+<div class="sermon-content">
+
+<h3>Finding Peace</h3>
+
+<p>
+
+Learn practical biblical principles for living with confidence and peace.
+
+</p>
+
+<a href="#" class="watch-btn">
+
+Watch Message
+
+</a>
+
+</div>
+
+</div>
+
+<div class="sermon">
+
+<img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?w=900" alt="Sermon">
+
+<div class="sermon-content">
+
+<h3>Living with Purpose</h3>
+
+<p>
+
+Understand God's purpose for your life and how to live it every day.
+
+</p>
+
+<a href="#" class="watch-btn">
+
+Watch Message
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+  
+  <section id="contact">
+
+<style>
+
+.visit-banner{
+
+background:linear-gradient(135deg,#1D3557,#274d87);
+color:#fff;
+padding:60px;
+border-radius:20px;
+text-align:center;
+margin-bottom:70px;
+
+}
+
+.visit-banner h2{
+
+font-size:48px;
+margin-bottom:20px;
+
+}
+
+.visit-banner p{
+
+max-width:750px;
+margin:auto;
+margin-bottom:30px;
+font-size:18px;
+
+}
+
+.contact-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:40px;
+
+}
+
+.info-card{
+
+background:#fff;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.info-card h2{
+
+color:#1D3557;
+margin-bottom:20px;
+
+}
+
+.info-item{
+
+margin:18px 0;
+font-size:18px;
+
+}
+
+.contact-form{
+
+background:#fff;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+width:100%;
+padding:15px;
+margin-bottom:18px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+outline:none;
+
+}
+
+.contact-form textarea{
+
+height:150px;
+resize:none;
+
+}
+
+.contact-form button{
+
+width:100%;
+padding:16px;
+border:none;
+background:#FFD369;
+color:#111;
+font-weight:bold;
+font-size:17px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+background:#f6c84c;
+
+}
+
+.map{
+
+margin-top:60px;
+overflow:hidden;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.map iframe{
+
+width:100%;
+height:400px;
+border:0;
+
+}
+
+.donate{
+
+margin-top:80px;
+background:#FFD369;
+padding:50px;
+border-radius:20px;
+text-align:center;
+
+}
+
+.donate h2{
+
+font-size:46px;
+color:#1D3557;
+margin-bottom:20px;
+
+}
+
+.donate p{
+
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+color:#444;
+
+}
+
+footer{
+
+background:#0d1b2a;
+color:#ddd;
+padding:60px 8% 30px;
+
+}
+
+.footer-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+
+}
+
+footer h3{
+
+color:#fff;
+margin-bottom:20px;
+
+}
+
+footer a{
+
+display:block;
+margin:10px 0;
+color:#ddd;
+text-decoration:none;
+
+}
+
+footer a:hover{
+
+color:#FFD369;
+
+}
+
+.footer-bottom{
+
+margin-top:40px;
+padding-top:20px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.1);
+
+}
+
+.whatsapp{
+
+position:fixed;
+right:20px;
+bottom:20px;
+width:60px;
+height:60px;
+background:#25D366;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+font-size:28px;
+text-decoration:none;
+color:#fff;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+</style>
+
+<div class="visit-banner">
+
+<h2>
+
+Plan Your Visit
+
+</h2>
+
+<p>
+
+We'd love to meet you. Join us this Sunday for heartfelt worship, practical Bible teaching, and a welcoming community for the whole family.
+
+</p>
+
+<a href="#visit" class="watch-btn">
+
+I'm New
+
+</a>
+
+</div>
+
+<div class="contact-grid">
+
+<div class="info-card">
+
+<h2>
+
+Service Times
+
+</h2>
+
+<div class="info-item">
+⛪ Sunday Worship — 9:00 AM
+</div>
+
+<div class="info-item">
+🙏 Wednesday Prayer — 6:30 PM
+</div>
+
+<div class="info-item">
+📖 Friday Bible Study — 7:00 PM
+</div>
+
+<div class="info-item">
+📍 25 Grace Avenue, New York, USA
+</div>
+
+<div class="info-item">
+📞 +1 (555) 222-7890
+</div>
+
+</div>
+
+<div class="contact-form">
+
+<form onsubmit="sendMessage(event)">
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<textarea
+placeholder="How can we pray for you?"
+required></textarea>
+
+<button>
+
+Send Prayer Request
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="map">
+
+<iframe
+src="https://www.google.com/maps?q=New+York&output=embed"
+loading="lazy">
+</iframe>
+
+</div>
+
+<div class="donate">
+
+<h2>
+
+Support Our Mission
+
+</h2>
+
+<p>
+
+Your generosity helps us serve our community, support families, reach more people, and continue sharing hope through the ministry of GraceLife Church.
+
+</p>
+
+<a href="#" class="watch-btn">
+
+Give Online
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+
+<h3>
+
+GraceLife Church
+
+</h3>
+
+<p>
+
+Helping people know God, grow in faith, build lasting relationships, and make a difference in the world.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Quick Links
+
+</h3>
+
+<a href="#">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#ministries">Ministries</a>
+
+<a href="#events">Events</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+<div>
+
+<h3>
+
+Connect
+
+</h3>
+
+<p>Sunday Worship</p>
+
+<p>Prayer Meetings</p>
+
+<p>Life Groups</p>
+
+<p>Community Outreach</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 GraceLife Church. All Rights Reserved.
+
+</div>
+
+</footer>
+
+<a
+class="whatsapp"
+href="https://wa.me/15552227890"
+target="_blank">
+
+💬
+
+</a>
+
+<script>
+
+document.querySelectorAll("nav a").forEach(link=>{
+
+link.addEventListener("click",function(e){
+
+if(this.getAttribute("href").startsWith("#")){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+}
+
+});
+
+});
+
+function sendMessage(e){
+
+e.preventDefault();
+
+alert("Thank you for reaching out. We have received your prayer request and will be in touch.");
+
+}
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+entry.target.style.transform="translateY(0)";
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".ministry-card,.event,.sermon,.info-card,.contact-form,.stat").forEach(el=>{
+
+el.style.opacity="0";
+el.style.transform="translateY(40px)";
+el.style.transition=".6s";
+
+observer.observe(el);
+
+});
+
+</script>
+
+</body>
+
+</html>

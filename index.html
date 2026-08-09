@@ -1,0 +1,1407 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigitTech | Business Websites & Landing Pages</title>
+  <meta name="description" content="DigitTech builds premium business websites and landing pages with WhatsApp contact, fast delivery and mobile-first design.">
+  <meta property="og:title" content="DigitTech | Business Websites & Landing Pages">
+  <meta property="og:description" content="Launch a trusted website for restaurants, salons, schools, real estate and service businesses with WhatsApp-ready contact.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="digittech-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DigitTech | Business Websites & Landing Pages">
+  <meta name="twitter:image" content="digittech-logo.png">
+  <link rel="icon" href="digittech-logo.png" type="image/png">
+  <meta name="twitter:description" content="Professional websites and landing pages built for fast WhatsApp inquiries and business credibility.">
+  <meta name="theme-color" content="#1E63FF">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1558461865767985');
+fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1558461865767985&ev=PageView&noscript=1" />
+</noscript>
+  <style>
+    :root {
+      color-scheme: only light;
+      --bg: #F8FAFC;
+      --surface: rgba(255,255,255,0.96);
+      --surface-strong: #FFFFFF;
+      --text: #08142B;
+      --muted: #5D678F;
+      --primary: #1E63FF;
+      --accent: #28D146;
+      --border: rgba(8,20,43,.08);
+      --shadow: 0 26px 90px rgba(8,20,43,.12);
+      --shadow-soft: 0 18px 40px rgba(8,20,43,.08);
+      --radius: 28px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    html {
+      scroll-padding-top: 96px;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #F8FAFC 0%, #ECF3FB 100%);
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    .btn {
+      font: inherit;
+      cursor: pointer;
+      border: 0;
+      background: none;
+    }
+
+    button:focus-visible,
+    a:focus-visible {
+      outline: 3px solid rgba(30,99,255,.35);
+      outline-offset: 3px;
+    }
+
+    .page-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 clamp(16px, 3vw, 24px);
+    }
+
+    header {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 100;
+      width: 100%;
+      background: rgba(248,250,252,.95);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(8,20,43,.06);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 18px clamp(16px, 3vw, 32px);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -.03em;
+      flex-shrink: 0;
+    }
+
+    .brand-logo {
+      height: 38px;
+      width: auto;
+      display: inline-block;
+    }
+
+    .brand span {
+      color: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-left: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    nav a {
+      font-weight: 600;
+      color: var(--muted);
+      transition: color .25s ease;
+      white-space: nowrap;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      color: var(--text);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: rgba(30,99,255,.1);
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      border-radius: 999px;
+      transition: transform .25s ease, opacity .25s ease;
+    }
+
+    .menu-toggle span + span {
+      margin-top: 4px;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+      transform: translateY(6px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .cta-nav,
+    .btn-primary,
+    .btn-secondary {
+      border-radius: 999px;
+      padding: 16px 24px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .cta-nav,
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 18px 40px rgba(40,209,70,.18);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,.95);
+      color: var(--text);
+      border: 1px solid rgba(8,20,43,.12);
+    }
+
+    .cta-nav:hover,
+    .btn-primary:hover,
+    .btn-secondary:hover,
+    .cta-nav:focus-visible,
+    .btn-primary:focus-visible,
+    .btn-secondary:focus-visible {
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+      align-items: center;
+      gap: clamp(32px, 5vw, 56px);
+      padding: clamp(112px, 14vw, 140px) 0 clamp(56px, 6vw, 72px);
+    }
+
+    .hero-copy {
+      max-width: 640px;
+      min-width: 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+      font-size: .95rem;
+      color: var(--primary);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 38px;
+      height: 2px;
+      background: var(--primary);
+      border-radius: 999px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 5vw, 4.5rem);
+      line-height: 1.02;
+      letter-spacing: -.04em;
+      margin-bottom: 26px;
+      max-width: 11ch;
+      overflow-wrap: anywhere;
+    }
+
+    .hero p {
+      max-width: 580px;
+      font-size: clamp(1rem, 1.2vw, 1.08rem);
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 34px;
+      overflow-wrap: anywhere;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .hero-visual {
+      display: grid;
+      place-items: center;
+      min-width: 0;
+    }
+
+    .hero-card {
+      width: 100%;
+      min-height: 520px;
+      border-radius: 34px;
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(235,244,255,.92));
+      border: 1px solid rgba(30,99,255,.12);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .hero-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: rgba(30,99,255,.1);
+      color: var(--primary);
+      font-weight: 700;
+      box-shadow: inset 0 0 0 1px rgba(30,99,255,.08);
+      width: fit-content;
+    }
+
+    .hero-logo-img {
+      height: 30px;
+      width: auto;
+      display: block;
+    }
+
+    .hero-mockup {
+      position: relative;
+      flex: 1;
+      border-radius: 28px;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F5F8FF 100%);
+      overflow: hidden;
+      min-height: 380px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(30,99,255,.1);
+    }
+
+    .mockup-browser {
+      position: absolute;
+      inset: 24px 24px auto 24px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      height: 14px;
+      z-index: 2;
+    }
+
+    .browser-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.85);
+      box-shadow: 0 0 0 1px rgba(8,20,43,.08);
+    }
+
+    .hero-mockup img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(1.04) contrast(1.03);
+    }
+
+    .hero-note {
+      position: absolute;
+      right: 24px;
+      bottom: 24px;
+      width: min(92%, 320px);
+      padding: 20px 22px;
+      border-radius: 24px;
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(30,99,255,.12);
+      box-shadow: 0 22px 50px rgba(8,20,43,.08);
+      backdrop-filter: blur(10px);
+      color: var(--text);
+    }
+
+    .hero-note strong {
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .hero-note p {
+      color: var(--muted);
+      font-size: .98rem;
+      line-height: 1.7;
+    }
+
+    .section {
+      padding: 88px 0;
+    }
+
+    .section-soft {
+      background: rgba(255,255,255,.84);
+    }
+
+    .section-title,
+    .section-heading h2 {
+      font-size: clamp(1.95rem, 2.1vw, 2.9rem);
+      margin-bottom: 18px;
+      letter-spacing: -.03em;
+      overflow-wrap: anywhere;
+    }
+
+    .section-copy,
+    .section-heading p {
+      max-width: 720px;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 38px;
+      overflow-wrap: anywhere;
+      font-size: 1rem;
+    }
+
+    .section-heading {
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid rgba(8,20,43,.05);
+      border-radius: 28px;
+      padding: 30px;
+      box-shadow: 0 20px 45px rgba(8,20,43,.06);
+      transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+      height: 100%;
+    }
+
+    .card:hover,
+    .card:focus-within {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 65px rgba(8,20,43,.12);
+      border-color: rgba(30,99,255,.15);
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+
+    .card p {
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .trust-grid {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .trust-card {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 28px 24px;
+      background: #fff;
+      border-radius: 24px;
+      border: 1px solid rgba(30,99,255,.08);
+      box-shadow: 0 20px 50px rgba(8,20,43,.06);
+    }
+
+    .trust-card strong {
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+
+    .trust-card span {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .service-card {
+      display: grid;
+      gap: 14px;
+      border-radius: 28px;
+      padding: 32px;
+      background: linear-gradient(180deg, rgba(255,255,255,.85), rgba(246,249,255,.98));
+      border: 1px solid rgba(30,99,255,.1);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: rgba(30,99,255,.1);
+      color: var(--primary);
+      font-size: 1.55rem;
+      box-shadow: inset 0 0 0 1px rgba(30,99,255,.08);
+      flex-shrink: 0;
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .feature-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .feature-card {
+      display: grid;
+      gap: 18px;
+      padding: 30px;
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(239,244,255,.96));
+      border: 1px solid rgba(8,20,43,.06);
+    }
+
+    .feature-card h3 {
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+    }
+
+    .feature-card p {
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .portfolio-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .portfolio-card {
+      position: relative;
+      overflow: hidden;
+      display: block;
+      border-radius: 28px;
+      min-width: 0;
+      height: 100%;
+      box-shadow: 0 22px 60px rgba(8,20,43,.08);
+      transition: transform .3s ease;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .portfolio-card img {
+      border-radius: 28px;
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      transition: transform .35s ease;
+    }
+
+    .portfolio-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .portfolio-body {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 30px;
+      background: linear-gradient(180deg, rgba(8,20,43,0) 0%, rgba(8,20,43,.78) 100%);
+      color: white;
+    }
+
+    .portfolio-tag {
+      display: inline-flex;
+      margin-bottom: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: .85rem;
+      background: rgba(255,255,255,.14);
+      color: rgba(255,255,255,.95);
+      letter-spacing: .02em;
+      width: fit-content;
+    }
+
+    .portfolio-body .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.16);
+      color: white;
+      font-weight: 700;
+      backdrop-filter: blur(10px);
+      width: fit-content;
+    }
+
+    .process-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      position: relative;
+      align-items: stretch;
+    }
+
+    .process-step {
+      position: relative;
+      background: var(--surface);
+      border: 1px solid rgba(8,20,43,.06);
+      padding: 28px 26px;
+      border-radius: 26px;
+      box-shadow: 0 18px 40px rgba(8,20,43,.06);
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      text-align: left;
+    }
+
+    .process-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -16px;
+      width: 32px;
+      height: 2px;
+      background: var(--primary);
+      transform: translateY(-50%);
+      border-radius: 999px;
+    }
+
+    .process-step:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -8px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--primary);
+      transform: translateY(-50%);
+    }
+
+    .process-step h3 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+
+    .process-step p {
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .testimonials {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .testimonial {
+      background: var(--surface);
+      border: 1px solid rgba(8,20,43,.06);
+      border-radius: 28px;
+      padding: 34px;
+      box-shadow: 0 22px 55px rgba(8,20,43,.06);
+      height: 100%;
+      display: grid;
+      gap: 18px;
+    }
+
+    .testimonial strong {
+      display: block;
+      color: var(--text);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .testimonial p {
+      color: var(--muted);
+      line-height: 1.85;
+      font-size: 1rem;
+    }
+
+    .pricing {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pricing-card {
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 440px;
+      background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(245,249,255,.98));
+      border: 1px solid rgba(8,20,43,.08);
+    }
+
+    .pricing-card.featured {
+      border-color: rgba(40,209,70,.18);
+      background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(238,252,240,.95));
+    }
+
+    .pricing-card h3 {
+      margin-bottom: 18px;
+      font-size: 1.8rem;
+    }
+
+    .pricing-card span {
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 22px;
+      color: var(--muted);
+    }
+
+    .pricing-card ul {
+      list-style: none;
+      display: grid;
+      gap: 14px;
+      margin-bottom: 28px;
+      color: var(--muted);
+      padding: 0;
+    }
+
+    .pricing-card li {
+      position: relative;
+      padding-left: 24px;
+    }
+
+    .pricing-card li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .pricing-card .btn-primary,
+    .pricing-card .btn-secondary {
+      width: 100%;
+    }
+
+    .faq-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .faq-item {
+      background: var(--surface);
+      border-radius: 24px;
+      padding: 28px;
+      border: 1px solid rgba(8,20,43,.06);
+      box-shadow: 0 18px 40px rgba(8,20,43,.05);
+      height: 100%;
+    }
+
+    .faq-item h3 {
+      margin-bottom: 12px;
+      font-size: 1.15rem;
+    }
+
+    .faq-item p {
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .final-cta {
+      background: linear-gradient(135deg, #1E63FF 0%, #55A3FF 100%);
+      color: white;
+      border-radius: 32px;
+      padding: 54px 38px;
+      box-shadow: 0 30px 80px rgba(30,99,255,.28);
+    }
+
+    .final-cta h2 {
+      font-size: clamp(2.2rem, 2.6vw, 3.5rem);
+      margin-bottom: 22px;
+      overflow-wrap: anywhere;
+    }
+
+    .final-cta p {
+      max-width: 720px;
+      line-height: 1.8;
+      color: rgba(255,255,255,.92);
+      margin-bottom: 28px;
+      overflow-wrap: anywhere;
+      font-size: 1.05rem;
+    }
+
+    .footer {
+      padding: 52px 0 26px;
+      color: var(--muted);
+    }
+
+    .footer-cols {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 32px;
+      align-items: start;
+      margin-bottom: 30px;
+    }
+
+    .footer-brand {
+      display: grid;
+      gap: 16px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 14px;
+    }
+
+    .footer-links a:hover,
+    .footer-links a:focus-visible {
+      color: var(--text);
+    }
+
+    .footer-note {
+      border-top: 1px solid rgba(8,20,43,.08);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 18px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 100;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #28D146 0%, #24B13D 100%);
+      padding: 14px 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      font-weight: 700;
+      box-shadow: 0 24px 50px rgba(40,209,70,.28);
+      text-decoration: none;
+      max-width: calc(100% - 32px);
+      line-height: 1.2;
+    }
+
+    .whatsapp-float svg {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section,
+    .hero {
+      scroll-margin-top: 110px;
+    }
+
+    @media (max-width: 1120px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .portfolio-grid,
+      .feature-grid,
+      .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .hero-card {
+        min-height: 500px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .nav-inner {
+        flex-wrap: wrap;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+        flex-direction: column;
+        margin-left: auto;
+      }
+
+      .nav-actions {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 0;
+        padding-top: 8px;
+      }
+
+      .nav-actions.open {
+        display: flex;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+
+      nav a {
+        padding: 10px 0;
+      }
+
+      .cta-nav {
+        width: 100%;
+      }
+
+      .hero {
+        padding-top: 96px;
+      }
+
+      .hero-card {
+        min-height: 460px;
+      }
+
+      .section {
+        padding: 68px 0;
+      }
+
+      .process-step:not(:last-child)::after,
+      .process-step:not(:last-child)::before {
+        display: none;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .page-wrap {
+        padding: 0 16px;
+      }
+
+      .hero {
+        padding: 56px 0 48px;
+        gap: 32px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn-primary,
+      .btn-secondary,
+      .cta-nav {
+        width: 100%;
+        padding: 15px 20px;
+      }
+
+      .hero-card {
+        padding: 22px;
+        min-height: 380px;
+      }
+
+      .hero-note {
+        right: 16px;
+        left: 16px;
+        width: auto;
+        bottom: 16px;
+      }
+
+      .section-title,
+      .section-heading h2 {
+        font-size: clamp(1.65rem, 6vw, 2.15rem);
+      }
+
+      .section-copy,
+      .section-heading p {
+        font-size: .98rem;
+        margin-bottom: 28px;
+      }
+
+      .grid-3,
+      .grid-4,
+      .portfolio-grid,
+      .feature-grid,
+      .testimonials,
+      .pricing,
+      .faq-grid,
+      .process-grid,
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card,
+      .testimonial,
+      .faq-item,
+      .pricing-card,
+      .final-cta {
+        padding: 24px;
+      }
+
+      .portfolio-card img {
+        height: 260px;
+      }
+
+      .portfolio-body {
+        padding: 22px;
+      }
+
+      .footer-cols {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .whatsapp-float {
+        right: 14px;
+        bottom: 14px;
+        padding: 13px 16px;
+        font-size: .95rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .brand {
+        font-size: 1.2rem;
+      }
+
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+
+      .eyebrow {
+        font-size: .82rem;
+        margin-bottom: 18px;
+      }
+
+      .hero p {
+        font-size: .95rem;
+        line-height: 1.75;
+      }
+
+      .footer-note {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        scroll-behavior: auto;
+      }
+
+      .fade-up,
+      .fade-up.visible,
+      .card,
+      .card:hover,
+      .btn-primary,
+      .btn-secondary,
+      .cta-nav,
+      .portfolio-card img,
+      .hero-note {
+        transition: none !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="page-wrap nav-inner">
+      <a class="brand" href="#home"><img src="digittech-logo.png" alt="DigitTech logo" class="brand-logo"></a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-actions" id="mobile-nav">
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#why">Why Us</a>
+          <a href="#work">How It Works</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="cta-nav" href="https://wa.me/2349125274323?text=Hello%20DigitTech%2C%20I%20want%20a%20high-converting%20landing%20page%20for%20my%20business.">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <section class="hero" id="home">
+      <div class="hero-copy fade-up">
+        <p class="eyebrow">Professional Web Design</p>
+        <h1>Launch a premium website that makes your business look trusted and easy to contact.</h1>
+        <p>DigitTech builds polished business websites and landing pages for restaurants, salons, schools, real estate, construction, and service brands. Every site is mobile-ready, WhatsApp-friendly, and designed for fast delivery.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="https://wa.me/2349125274323?text=Hello%20DigitTech%2C%20I%20want%20a%20high-converting%20landing%20page%20for%20my%20business.">Start with WhatsApp</a>
+          <a class="btn-secondary" href="#portfolio">See Portfolio</a>
+        </div>
+      </div>
+      <div class="hero-visual fade-up" aria-hidden="true">
+        <div class="hero-card">
+          <div class="hero-logo"><img class="hero-logo-img" src="digittech-logo.png" alt="DigitTech logo"></div>
+          <div class="hero-mockup">
+            <div class="mockup-browser" aria-hidden="true">
+              <span class="browser-dot"></span>
+              <span class="browser-dot"></span>
+              <span class="browser-dot"></span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Website preview showing a professional landing page design" />
+            <div class="hero-note">
+              <strong>WhatsApp-ready websites</strong>
+              <p>Fast, polished page designs for businesses that want more inquiries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft fade-up">
+      <div class="section-heading">
+        <p class="eyebrow">Trusted Workflows</p>
+        <h2>Built for business owners who want a fast, professional online presence.</h2>
+        <p>DigitTech focuses on clarity, trust, and easy customer contact so your website can start working for your business right away.</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card"><strong>Fast Delivery</strong><span>Quick setup with most projects ready in hours and complete within two days.</span></div>
+        <div class="trust-card"><strong>Mobile Friendly</strong><span>Clean layouts that work smoothly on phones, tablets and larger screens.</span></div>
+        <div class="trust-card"><strong>WhatsApp Contact</strong><span>Clear call-to-action buttons that connect visitors to your WhatsApp instantly.</span></div>
+        <div class="trust-card"><strong>Modern Design</strong><span>Premium visual style tailored to your brand without the generic template look.</span></div>
+        <div class="trust-card"><strong>SEO-Friendly</strong><span>Organized structure and fast performance help search engines understand your site.</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-title fade-up">What We Build</div>
+      <p class="section-copy fade-up">DigitTech creates website solutions that help customers understand your service, trust your brand, and message you quickly on WhatsApp.</p>
+      <div class="grid grid-4 fade-up">
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">📄</div>
+          <h3>Landing Pages</h3>
+          <p>Compact, persuasive pages for product launches, promotions and lead capture with clear WhatsApp contact.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">🌐</div>
+          <h3>Business Websites</h3>
+          <p>Multi-page sites that showcase services, testimonials, location details and a professional brand image.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">🎯</div>
+          <h3>Sales Funnels</h3>
+          <p>Focused website journeys that guide visitors toward action and make it simple to contact you immediately.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">🔄</div>
+          <h3>Website Redesign</h3>
+          <p>Refresh outdated sites with a modern layout, stronger messaging, and better mobile performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="section-title fade-up">Why Choose DigitTech</div>
+      <p class="section-copy fade-up">Your website should make a strong first impression, work well on every device, and make it easy for customers to start a conversation.</p>
+      <div class="grid feature-grid fade-up">
+        <div class="feature-card"><div class="feature-icon" aria-hidden="true">🚀</div><h3>Fast Loading</h3><p>We build with clean code so pages open quickly and visitors stay engaged.</p></div>
+        <div class="feature-card"><div class="feature-icon" aria-hidden="true">📱</div><h3>Responsive</h3><p>Every layout is tested for phones, tablets and desktop screens so your website looks polished everywhere.</p></div>
+        <div class="feature-card"><div class="feature-icon" aria-hidden="true">💬</div><h3>WhatsApp Ready</h3><p>Built-in WhatsApp links help customers message you without friction from any page.</p></div>
+        <div class="feature-card"><div class="feature-icon" aria-hidden="true">⚡</div><h3>SEO Friendly</h3><p>Structured content, clean headings and fast performance help search engines understand your site.</p></div>
+        <div class="feature-card"><div class="feature-icon" aria-hidden="true">🎨</div><h3>Custom Design</h3><p>Designs that match your brand, highlight your offers and feel premium without being overdone.</p></div>
+        <div class="feature-card"><div class="feature-icon" aria-hidden="true">🛠️</div><h3>Easy Updates</h3><p>We deliver a site that is simple to update later, whether you want to change services, images or offers.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="section-title fade-up">Portfolio</div>
+      <p class="section-copy fade-up">Sample website concepts built for business owners who need a professional online presence and fast customer contact.</p>
+      <div class="grid portfolio-grid fade-up">
+        <a class="portfolio-card" href="folio1.html">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" loading="lazy" alt="Modern Real Estate Landing Page">
+          <div class="portfolio-body">
+            <span class="portfolio-tag">Real Estate</span>
+            <h3>Modern Real Estate Landing Page</h3>
+            <p>Luxury property marketing with a high-converting hero, trust signals, and a strong WhatsApp lead flow for buyer inquiries.</p>
+            <span class="btn-link">View Project →</span>
+          </div>
+        </a>
+        <a class="portfolio-card" href="folio2.html">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" loading="lazy" alt="Fitness Landing Page">
+          <div class="portfolio-body">
+            <span class="portfolio-tag">Fitness</span>
+            <h3>Fitness Landing Page Designed to Convert</h3>
+            <p>High-energy membership pages built to showcase training plans, program highlights, and WhatsApp booking.</p>
+            <span class="btn-link">View Project →</span>
+          </div>
+        </a>
+        <a class="portfolio-card" href="folio3.html">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=80%22" loading="lazy" alt="Bright Future Academy">
+          <div class="portfolio-body">
+            <span class="portfolio-tag">Education</span>
+            <h3>Bright Future Academy</h3>
+            <p>World-class education landing page that inspires creativity, leadership, confidence, and academic excellence.</p>
+            <span class="btn-link">View Project →</span>
+          </div>
+        </a>
+        <a class="portfolio-card" href="folio4.html">
+          <img src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?w=1600" loading="lazy" alt="GraceLife Church">
+          <div class="portfolio-body">
+            <span class="portfolio-tag">Church</span>
+            <h3>GraceLife Church</h3>
+            <p>Faith-focused landing page that welcomes new visitors to grow in relationship, worship, and community.</p>
+            <span class="btn-link">View Project →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-title fade-up">How It Works</div>
+      <p class="section-copy fade-up">A simple, clear process so your website can launch quickly and with confidence.</p>
+      <div class="grid process-grid fade-up">
+        <div class="process-step">
+          <h3>1</h3>
+          <p>Send your business idea, goals and the services you want to showcase.</p>
+        </div>
+        <div class="process-step">
+          <h3>2</h3>
+          <p>We design a premium page layout, messaging and WhatsApp contact flow.</p>
+        </div>
+        <div class="process-step">
+          <h3>3</h3>
+          <p>You review the design, request changes and approve the final version.</p>
+        </div>
+        <div class="process-step">
+          <h3>4</h3>
+          <p>We launch your website and make it easy for customers to message you.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials">
+      <div class="section-title fade-up">What You Can Expect</div>
+      <p class="section-copy fade-up">A professional website that reflects your business, communicates clearly and connects visitors to WhatsApp.</p>
+      <div class="grid testimonials fade-up">
+        <div class="testimonial">
+          <strong>Professional Design</strong>
+          <p>A polished layout that makes your services look credible and ready for customers.</p>
+        </div>
+        <div class="testimonial">
+          <strong>Clear Communication</strong>
+          <p>Simple structure and messaging that help visitors understand your offer and take action.</p>
+        </div>
+        <div class="testimonial">
+          <strong>Fast Delivery</strong>
+          <p>Most websites are ready in just a few hours, with a maximum of two days for full delivery.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="section-title fade-up">Pricing</div>
+      <p class="section-copy fade-up">Choose the package that fits your growth stage and let DigitTech build your site with WhatsApp contact at the center.</p>
+      <div class="grid pricing fade-up">
+        <div class="card pricing-card">
+          <h3>Starter</h3>
+          <span>Landing Page</span>
+          <ul>
+            <li>Professional single-page website</li>
+            <li>Mobile-friendly design</li>
+            <li>WhatsApp button included</li>
+            <li>Fast delivery and launch</li>
+            <li>Basic SEO structure</li>
+          </ul>
+          <a class="btn-secondary" href="https://wa.me/2349125274323?text=Hello%20DigitTech%2C%20I%20am%20interested%20in%20the%20Starter%20package.">Discuss Your Project</a>
+        </div>
+        <div class="card pricing-card featured">
+          <h3>Business</h3>
+          <span>Business Website</span>
+          <ul>
+            <li>Premium branded website</li>
+            <li>Multiple sections and pages</li>
+            <li>WhatsApp contact for every visitor</li>
+            <li>SEO-friendly foundation</li>
+            <li>Better customization and polish</li>
+          </ul>
+          <a class="btn-primary" href="https://wa.me/2349125274323?text=Hello%20DigitTech%2C%20I%20am%20interested%20in%20the%20Business%20package.">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-title fade-up">FAQ</div>
+      <div class="grid faq-grid fade-up">
+        <div class="faq-item"><h3>How long does it take?</h3><p>Usually within a few hours, with a maximum of two days for full delivery.</p></div>
+        <div class="faq-item"><h3>Is the website mobile responsive?</h3><p>Yes. Every design is built to look great on phones, tablets and desktop screens.</p></div>
+        <div class="faq-item"><h3>Can I request changes?</h3><p>Yes. You can review the design and ask for revisions before launch.</p></div>
+        <div class="faq-item"><h3>Will WhatsApp be connected?</h3><p>Yes. Every website includes clear WhatsApp contact options for customers.</p></div>
+        <div class="faq-item"><h3>Can I use my own domain?</h3><p>Yes. We can publish your site to your own domain or help you connect it.</p></div>
+        <div class="faq-item"><h3>Can you redesign my existing website?</h3><p>Yes. We refresh existing sites with a modern layout and stronger messaging.</p></div>
+        <div class="faq-item"><h3>Can I update the site later?</h3><p>Yes. We deliver a structure that makes future updates easier.</p></div>
+        <div class="faq-item"><h3>Do you build for different businesses?</h3><p>Yes. We create websites for restaurants, schools, salons, real estate, services and more.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="final-cta fade-up">
+        <h2>Ready to Put Your Business Online?</h2>
+        <p>Get a premium website that builds credibility, helps customers find you, and starts WhatsApp conversations faster.</p>
+        <a class="btn-primary" href="https://wa.me/2349125274323?text=Hello%20DigitTech%2C%20I%20want%20a%20high-converting%20landing%20page%20for%20my%20business.">Chat on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-wrap footer">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <div class="brand">Digit<span>Tech</span></div>
+        <p>Design • Develop • Deliver • Grow. Premium websites for Nigerian businesses and service brands.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="https://wa.me/2349125274323?text=Hello%20DigitTech%2C%20I%20want%20a%20high-converting%20landing%20page%20for%20my%20business.">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-note">
+      <span>© 2026 DigitTech. All Rights Reserved.</span>
+      <span>Website design and landing pages that turn visitors into WhatsApp leads.</span>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/2349125274323?text=Hello%20DigitTech%2C%20I%20want%20a%20high-converting%20landing%20page%20for%20my%20business." aria-label="Chat with DigitTech on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16.53 7.47a5 5 0 0 0-7.06 0L8 8.94a5 5 0 0 0 0 7.07l.35.35a1 1 0 0 1 .12 1.11l-.66 1.28a1 1 0 0 0 1.22 1.4l1.29-.52a1 1 0 0 1 1.11.12l.35.35a5 5 0 0 0 7.07 0l1.47-1.47a5 5 0 0 0 0-7.07l-2.59-2.59Z"/><path d="M17.5 6.5 16 5"/><path d="M8.5 17.5 7 19"/><path d="m8 16 8-8"/></svg>
+    Chat on WhatsApp
+  </a>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.fade-up').forEach(element => {
+    observer.observe(element);
+  });
+
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navActions = document.querySelector('.nav-actions');
+
+  if (menuToggle && navActions) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = menuToggle.classList.toggle('active');
+      navActions.classList.toggle('open', isOpen);
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    navActions.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navActions.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+    link.addEventListener('click', () => {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Contact');
+      }
+    });
+  });
+</script>
+</body>
+</html>
